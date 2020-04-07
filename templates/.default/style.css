@@ -1,0 +1,85 @@
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.task_container {
+    width: 80%;
+    margin: 10px auto;
+    min-width: 300px;
+    overflow: hidden;
+    color: #333;
+}
+
+.task {
+    background-color: lightgreen;
+    padding: 1em;
+}
+
+.task.active {
+    background-color: lightcoral;
+}
+
+.task h3 {
+    margin: .5em 0;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.task:hover {
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
+}
+
+.task_options {
+    float: right;
+    padding: 1em;
+    line-height: 32px;
+}
+
+.option a, .option a:visited, .option a:link {
+    color: #333;
+    font-size: 20px;
+}
+
+.option a {
+    margin: 0 .5em;
+}
+
+a.delete:hover {
+    color: red;
+}
+
+a.edit:hover, a.status:hover {
+    color: green;
+}
+
+.task_info {
+    max-height: 0;
+    height: auto;
+    overflow: hidden;
+}
+
+a.task_add {
+    padding: .5em 1em;
+    width: 250px;
+    font-size: larger;
+    background-color: lightblue;
+    color: #333 !important;
+    text-align: center;
+    margin: 15px auto;
+    display: block;
+}
+
+#error {
+    background-color: tomato;
+    color: #333;
+    padding: .5em 0;
+    font-size: bigger;
+    display: none;
+}
+
+#error.visible {
+    display: block;
+}
